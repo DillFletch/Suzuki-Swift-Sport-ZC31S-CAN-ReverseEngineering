@@ -1,2 +1,21 @@
 # Suzuki-Swift-Sport-ZC31S-CAN-ReverseEngineering
-Flask app as well as documented CAN packets and arbitration ID's for my 2009 Suzuki Swift Sport
+This is a basic Flask app I wrote as a proof of concept to control my cars door locks. 
+
+
+## CAN message documentation
+
+### Arbitration ID 0x3D8
+3D8#000500 - All Doors lock - Send once to toggle dome light
+3D8#000100 - All Doors unlock
+3D8#000200 - Driver door unlock
+
+3D8#000501 - Door Lock with single hazards
+3D8#000202 - Door unlock with double hazards
+
+3D8#000020 - Start buzzer
+3D8#000000 - Stop buzzer
+
+3D8#000001 - Flash hazards once (Body control module uses this during lock)
+3D8#000002 - Flash hazards twice (Body control module uses this during unlock)
+
+Good idea to send each command twice to wake CAN in case of ignition off.
