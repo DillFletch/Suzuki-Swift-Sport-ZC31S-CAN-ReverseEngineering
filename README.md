@@ -13,8 +13,9 @@ Most messages with the same arbitration ID can be used in conjunction with each 
 3D8#000501 - Door Lock with single hazards
 3D8#000202 - Door unlock with double hazards
 
-3D8#000020 - Start buzzer
-3D8#000000 - Stop buzzer
+3D8#000020 - Start interior buzzer
+
+3D8#000000 - Stop interior buzzer
 
 3D8#000001 - Flash hazards once (Body control module uses this during lock)
 3D8#000002 - Flash hazards twice (Body control module uses this during unlock)
