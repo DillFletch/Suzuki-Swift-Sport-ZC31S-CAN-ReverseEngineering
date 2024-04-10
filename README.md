@@ -3,6 +3,7 @@ This is a basic Flask app I wrote as a proof of concept to control my cars door 
 
 
 ## CAN message documentation
+Most messages with the same arbitration ID can be used in conjunction with each other. For example 3D8#000501 is the same as 3D8#000500 but flashes the hazards once.
 
 ### Arbitration ID 0x3D8
 3D8#000500 - All Doors lock - Send once to toggle dome light
